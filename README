@@ -1,1 +1,7 @@
 These are some code examples for interacting with the OpenStack APIs using Ruby. Most of these are results experimenting with the NeCTAR research cloud (nectar.org.au).
+
+You will need to create a 'credentials.rb' file in the following format:
+
+$PASSWORD = 'YOUR_PASSWORD' # From the Dashboard/credentials page (in the NeCTAR case it is NOT the password you use to login).
+$USER = 'YOUR_USERNAME' # Just your regular username.
+$TENANT_ID = 'YOUR_TENANT_ID' # This is a number that, I think, comes from the Nova database. You may need to contact your administrator for this number.
