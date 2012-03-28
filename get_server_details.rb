@@ -11,7 +11,6 @@ Net::HTTP.start(url.host, url.port) do |http|
   # Set the headers
   request['X-Auth-Token'] = TokenRequest.get_token($USER, $PASSWORD, $TENANT_ID)
   request.content_type = 'application/json'
-  request['Accept'] = 'application/xml'
 
   #make the request
   response = http.request request

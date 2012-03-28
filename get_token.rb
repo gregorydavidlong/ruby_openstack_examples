@@ -45,6 +45,9 @@ class TokenRequest
       #print raw_response.body.to_s + "\n"
 
       token_id = json_response['access']['token']['id']
+      api_url = json_response['access']['serviceCatalog'][2]['endpoints'][0]['publicURL']
+      #print "Token is #{token_id}\n"
+      #print "Nova URL is #{api_url}\n"
       token_id
     end
     token_id

@@ -1,4 +1,6 @@
-These are some code examples for interacting with the OpenStack APIs using Ruby. Most of these are results experimenting with the NeCTAR research cloud (nectar.org.au). Based on http://docs.rackspace.com/servers/api/v1.0/cs-devguide-20120320.pdf
+These are some code examples for interacting with the OpenStack APIs using Ruby. Most of these are results experimenting with the NeCTAR research cloud (nectar.org.au). 
+
+These examples are based on http://docs.openstack.org/api/openstack-compute/programmer/content/index.html.
 
 You will need to create a 'credentials.rb' file in the following format:
 
