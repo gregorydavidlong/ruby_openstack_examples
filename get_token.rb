@@ -18,8 +18,7 @@ class TokenRequest
         {
           'username' => user,
           'password' => password
-        },
-        'tenantId' => tenant_id
+        }
       }
     })
   end
@@ -42,7 +41,7 @@ class TokenRequest
       raw_response = http.request request
       json_response = JSON.parse raw_response.body
    
-      #print raw_response.body.to_s + "\n"
+      print raw_response.body.to_s + "\n"
 
       token_id = json_response['access']['token']['id']
       api_url = json_response['access']['serviceCatalog'][2]['endpoints'][0]['publicURL']
@@ -55,4 +54,4 @@ class TokenRequest
 end
 
 # Example usage
-#print TokenRequest.get_token($USER, $PASSWORD, $TENANT_ID) + "\n"
+print TokenRequest.get_token($USER, $PASSWORD, $TENANT_ID) + "\n"
