@@ -8,7 +8,7 @@ Net::HTTP.start(url.host, url.port) do |http|
   request = Net::HTTP::Get.new url.request_uri
 
   # Set the headers
-  request['X-Auth-Token'] = TokenRequest.get_token($USER, $PASSWORD, $TENANT_ID)
+  request['X-Auth-Token'] = TokenRequest.get_token($USER, $PASSWORD, $TENANT_NAME)
   request.content_type = 'application/json'
 
   #make the request

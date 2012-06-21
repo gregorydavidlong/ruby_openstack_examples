@@ -7,6 +7,7 @@ You will need to create a 'credentials.rb' file in the following format:
 $PASSWORD = 'YOUR_PASSWORD' # From the Dashboard/credentials page (in the NeCTAR case it is NOT the password you use to login).
 $USER = 'YOUR_USERNAME' # Just your regular username.
 $TENANT_ID = 'YOUR_TENANT_ID' # This is a number that, I think, comes from the Nova database. You may need to contact your administrator for this number.
+$TENANT_NAME = 'YOUR_TENANT_NAME' # This is the name of your OpenStack tenant. In the NeCTAR case it's probably something like 'pt-xx'.
 
 
 You will also need the json gem:

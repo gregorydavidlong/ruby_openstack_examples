@@ -30,7 +30,7 @@ Net::HTTP.start(url.host, url.port) do |http|
     
       # set the content type
       request.content_type = 'application/json'
-      request['X-Auth-Token'] = TokenRequest.get_token($USER, $PASSWORD, $TENANT_ID)
+      request['X-Auth-Token'] = TokenRequest.get_token($USER, $PASSWORD, $TENANT_NAME)
       request['X-Auth-Project-Id'] = 'pt-49'
 
       # set the body of the request
